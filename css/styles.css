@@ -420,7 +420,10 @@ input[type=submit]:hover{
 
 @media(max-width:768px){
     input[type=text]{
-        width: 236px;
+        width: 235px;
+    }
+    textarea{
+        width: 235px;
     }
 }
 
