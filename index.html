@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home-Myweb</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/120c52149e.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+
+
+
+
+    <body><script src="js/myscript.js"></script>
+
+        
+        <div class="row logo-banner">
+            <div class="col-5">
+                <img src="images/asadiv.png" alt="">
+            </div>
+            <div class="col-7">
+                <p class="letsjoin-font">Lets join, grow and build together...</p>
+            </div>
+        </div>
+
+
+        <div class="banner">
+             <img src="images/ba.png" alt="logos of python photoshop" class="img-responsive">
+        </div>
+
+
+
+
+        <!-------------------------------   image and  about   -------------------------->
+        <div class="row container img-info">
+            <div class="col-4 me">
+                <img src="images/me1.png"
+                 alt="smiling at camera" 
+                 class="img-responsive">
+            </div>
+            <div class="col-8 name-info">
+                <p class="topic">Asad Khan</p>
+                <div class="about-me" id="about-me">
+                    <button class="aboutme-btn" id="aboutme-btn" onclick="showAbout()">About me</button>
+                    <div class="aboutme-text" id="aboutme-text">
+                        <p>My name is <b>Asad khan</b>. I have passion for learning different skillsets and advancing in it. I love to add new skills and experiences to my portfolio and then provide my services to <b>You</b>. <br>
+                        <br> I will enlist some of my skills here that I am currently enjoying;<br>
+                        <b><br>Frontend Web Development <br>Web Designing<br>Graphic Designing <br>Video Editing <br>python. </b>
+                        <br><br></p>
+                        <p>I have also got two Youtube Channels where I make my own content by myself. The one named "Jungle Journeys" is all about animals and the other named "4SEVEN" is about my own stuff.</p>
+                        <button class="yt-btn" onclick="media('yt1')">Jungle Journeys</button>
+                        <button class="yt-btn" onclick="media('yt2')">4SEVEN</button>
+                        <p><h2 class="findmehere">Find Me </h2><b>Email:</b> asadkhan447.ak@gmail.com <br><b>Phone:</b> +92 3459455592 <br><b>Address:</b> Chakdara,Pakistan</p>
+                        <button class="git-btn" onclick="media('github-main')">My Github</button>
+                        <br>
+                        <div class="media">
+                            <h2 class="findmehere">Media</h2>
+                            <i class="fa-brands fa-facebook" onclick="media('facebook')"></i>
+                            <i class="fa-brands fa-instagram" onclick="media('insta')"></i>
+                            <i class="fa-brands fa-twitter" onclick="media('twitter')"></i>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                    <button class="collapse-btn" id="collapse-btn" onclick="hideAbout()">Collapse</button>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-------------------------------   Projects posts   -------------------------->
+
+        <div><p class="topic-projects">Progress & Projects</p></div>
+
+
+        <div class="container row  main-projects">
+            <div class="col-4">
+                <div class="projects-posts">
+                    <img src="images/html.png" alt="" >
+                    <h3>Frontend Web Development</h3>
+                    <a href="frontend.html" style="text-decoration: none;"><h4>see projects</h4></a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="projects-posts">
+                    <img src="images/ps.png" alt="">
+                    <h3>Graphic Design</h3>
+                    <a href="graphics.html" style="text-decoration: none;"><h4>see projects</h4></a>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="projects-posts">
+                    <img src="images/vid.png" alt="" >
+                    <h3>Content Creation</h3>
+                    <a href="content.html" style="text-decoration: none;"><h4>see projects</h4></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form">
+            <form name="contact" netlify>
+                <ul>
+                    <li>Enter your name and a message for me.</li>
+                    <li>Email is optional.</li>
+                </ul>
+                <input type="text" placeholder="Full name" name="name">
+                <input type="text" placeholder="Email" name="email">
+                <textarea name="message" id="text-area" cols="30" rows="10">Type your message here</textarea>
+			    <input type='submit' value='Submit'>
+
+            </form>
+        </div>
+
+
+
+
+
+
+
+        <!-------------------------------   footer   -------------------------->
+
+        <footer>
+            <div class="courses-foot">
+                <h2>Projects</h2>
+                <a href="frontend.html" style="text-decoration: none;"><p>Web Development</p></a>
+                <a href="graphics.html" style="text-decoration: none;"><p>Graphic Design</p></a>
+                <a href="content.html" style="text-decoration: none;"><p>Video Editing</p></a>
+            </div>
+            <div class="contact">
+                <h2>Reach Me</h2>
+                <p><i class="fa-solid fa-phone"></i>Phone: +923484755592</p>
+                <p><i class="fa-solid fa-envelope"></i>Email: asadkhan447.ak@gmail.com</p>
+                <p><i class="fa-solid fa-location-dot"></i>Chakdara,Pakistan</p>
+            </div>
+            <div class="media">
+                <h2>Media</h2>
+                <i class="fa-brands fa-facebook" onclick="media('facebook')"></i>
+                <i class="fa-brands fa-instagram" onclick="media('insta')"></i>
+                <i class="fa-brands fa-twitter" onclick="media('twitter')"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </footer>
+        <div class="copyrights">
+            <p>Copyrights asadiv | 2024</p>
+        </div>
+
+
+    </body>
+
+</html>
